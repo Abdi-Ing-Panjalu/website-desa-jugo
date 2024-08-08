@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Navbar from '@/components/navbar'
-import Card from '@/components/card'
+import Navbar from '@/components/Navbar'
+import Card from '@/components/Card'
 import background from "@/assets/images/background-1.png"
 import petajugo from "@/assets/images/peta-jugo.svg"
 import Image from "next/image"; 
