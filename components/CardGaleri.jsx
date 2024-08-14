@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CardWisata = ({ imageUrl, link }) => {
   return (
-    <Link href={link} passHref>
+    // <Link href={link} passHref>
       <div className="w-80 rounded overflow-hidden shadow-lg cursor-pointer">
         <div className="relative h-48">
           <Image
@@ -14,7 +14,7 @@ const CardWisata = ({ imageUrl, link }) => {
           />
         </div>
       </div>
-    </Link>
+    // </Link>
   );
 };
 
