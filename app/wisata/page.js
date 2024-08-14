@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import CardWisata from '@/components/CardWisata'
 import background from "@/assets/images/background-1.png"
-import petajugo from "@/assets/images/peta-jugo.svg"
+import petajugo from "@/assets/images/peta-jugo.png"
 import irenggolo from "@/assets/images/ironggolo-1.jpeg"
 import prongos2 from "@/assets/images/prongos-2.jpg"
 import prongos3 from "@/assets/images/prongos-3.jpg"

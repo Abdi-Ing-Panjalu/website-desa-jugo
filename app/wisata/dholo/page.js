@@ -3,7 +3,7 @@ import Navbar from '@/components/Navbar'
 import CardWisata from '@/components/CardWisata'
 import CardGaleri from '@/components/CardGaleri'
 import background from "@/assets/images/background-1.png"
-import petajugo from "@/assets/images/peta-jugo.svg"
+import petajugo from "@/assets/images/peta-jugo.png"
 import irenggolo from "@/assets/images/ironggolo-1.jpeg"
 import prongos from "@/assets/images/cafe-prongos-1.jpg"
 import warkop from "@/assets/images/warkop-billiard-1.jpg"

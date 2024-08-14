@@ -3,7 +3,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import Card from '@/components/Card'
 import background from "@/assets/images/background-1.png"
-import petajugo from "@/assets/images/peta-jugo.svg"
+import petajugo from "@/assets/images/peta-jugo.png"
 import Image from "next/image"; 
 
 
@@ -49,7 +49,7 @@ function page() {
           <Card
             title="Wisata"
             description="A beautiful landscape with a serene view."
-            imageUrl={background} // replace with your image path
+            imageUrl={"https://drive.google.com/uc?export=view&id=1w-qsKR2WR02rC7VEKTRdZzPyeh9Orh74"} // replace with your image path
           />
           <Card
             title="Pemetaan"
