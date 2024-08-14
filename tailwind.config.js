@@ -12,6 +12,12 @@ module.exports = {
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'background-1' : "url('assets/images/background.png')"
       },
+      height: {
+        '500': '500px', // Custom height value
+      },
+      fontFamily: {
+        sans: ['Roboto', 'sans-serif'],
+      }, 
     },
   },
   plugins: [],

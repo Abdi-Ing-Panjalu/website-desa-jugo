@@ -8,6 +8,7 @@ import prongos from "@/assets/images/cafe-prongos-1.jpg"
 import warkop from "@/assets/images/warkop-billiard-1.jpg"
 import dholo from "@/assets/images/dholo-7.jpeg"
 import Image from "next/image"; 
+import ternak from "@/assets/images/ternak-2.png"
 
 function wisata() {
   return (
@@ -25,7 +26,41 @@ function wisata() {
         </div>
       </section>
 
-      <section
+      <section className="w-full h-auto bg-white p-8 flex flex-col items-center">
+        <h1 className="text-5xl font-bold mt-8 mb-16">Pemetaan Tersedia</h1>
+
+        <div className="w-full flex justify-center mb-20">
+          <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-32">
+            <CardWisata
+              title="Sebaran Ternak Ruminansia"
+              imageUrl={ternak} // replace with your image path
+              link={"/pemetaan/ternak"}
+            />
+            <CardWisata
+              title="Rawan Longsor"
+              imageUrl={ternak} // replace with your image path
+              link={"/pemetaan/longsor"}
+            />
+          </div>
+        </div>
+
+        <div className="w-full flex justify-center mb-10">
+          <div className="max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="col-span-1 md:col-span-2 flex justify-center">
+              <CardWisata
+                title="Penggunaan Lahan"
+                imageUrl={ternak} // replace with your image path
+                link={"/pemetaan/lahan"}
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      {/* <section
         className="w-full h-50 bg-white p-32 flex"
       >
         <div className="flex-1 flex-col items-center justify-center ml-12">
@@ -68,24 +103,8 @@ function wisata() {
           <Image src={irenggolo} alt="Petajugo" className="w-5/6 mr-6 items-center justify-center rounded-xl" />
           
         </div>
-      </section>
+      </section> */}
 
-      <section>
-      <div className="relative w-full h-96"> {/* Adjust height as needed */}
-      <Image
-        src={irenggolo}
-        alt="Background Image"
-        layout="fill"
-        objectFit="cover"
-        quality={100}
-        className="z-10"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-white via-transparent to-transparent z-20"></div>
-      <div className="absolute left-0 top-0 bottom-0 flex items-center pl-8 z-30">
-        <h1 className="text-black text-4xl font-bold">Centered Text</h1>
-      </div>
-    </div>  
-      </section>
 
 
     </div>

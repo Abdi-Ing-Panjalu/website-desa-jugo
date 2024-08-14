@@ -6,14 +6,14 @@ export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div>
+    <section>
     <nav style={{ backgroundColor: '#4B3619' }} className="bg-white shadow-lg">
       <div className="max-w-8xl mx-auto px-10">
         <div className="flex justify-between items-center">
           <div className="flex space-x-4">
             {/* Logo */}
             <div>
-              <a href="#" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
+              <a href="/" className="flex items-center py-5 px-2 text-white hover:text-gray-300">
                 <span className="font-bold">Desa Jugo</span>
               </a>
             </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-1">
             {/* Primary Navbar items */}
             <div className="hidden md:flex items-center space-x-2">
-              <a href="/produk" className="py-5 px-5 text-white hover:text-gray-300">Produk Unggulan</a>
+              {/* <a href="/produk" className="py-5 px-5 text-white hover:text-gray-300">Produk Unggulan</a> */}
               <a href="/pemetaan" className="py-5 px-5 text-white hover:text-gray-300">Pemetaan</a>
               <a href="/wisata" className="py-5 px-5 text-white hover:text-gray-300">Wisata</a>
             </div>
@@ -58,13 +58,13 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div className={`mobile-menu md:hidden ${isMobileMenuOpen ? '' : 'hidden'}`}>
-        <a href="#" className="block py-2 px-4 text-white text-sm hover:bg-gray-200 hover:text-gray-900">Produk Unggulan</a>
+        {/* <a href="#" className="block py-2 px-4 text-white text-sm hover:bg-gray-200 hover:text-gray-900">Produk Unggulan</a> */}
         <a href="#" className="block py-2 px-4 text-white text-sm hover:bg-gray-200 hover:text-gray-900">Pemetaan</a>
         <a href="#" className="block py-2 px-4 text-white text-sm hover:bg-gray-200 hover:text-gray-900 ">Wisata</a>
       </div>
     </nav>
   
-  </div>
+  </section>
 
   );
 }

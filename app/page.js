@@ -20,16 +20,23 @@ function page() {
         <h3 className="text-white text-xl">Jawa Timur</h3>
       </section>
 
-      <section
-        className="w-full h-[calc(100vh-64px)] bg-white p-24 flex"
-      >
-        <div className="flex-1 flex-col items-center justify-center ml-12">
-          <h1 className="text-black text-5xl font-bold">Mengenal Jugo</h1>
-          <Image src={petajugo} alt="Petajugo" className="w-5/6 h-auto my-10 items-center justify-center" />
-        </div>
-        <div className="flex-1 flex justify-center">
-          <p> Plis le aku males gatau mau nulis apa. Tolong seseorang yang pinter copywriting bantu aku T_T </p>
-        </div>
+      <section className="w-full h-[calc(100vh-64px)] bg-white p-8 flex flex-col md:flex-row items-center">
+      <div className="flex-1 flex flex-col items-center justify-center p-8 bg-white rounded-lg mx-4">
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Mengenal Jugo</h1>
+        <Image
+          src={petajugo}
+          alt="Petajugo"
+          className="w-full h-auto rounded-lg"
+        />
+      </div>
+        <div className="flex-1 flex flex-col items-center justify-center p-8 mx-4">
+        <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+          Desa Jugo merupakan salah satu desa yang merupakan bagian dari Kecamatan Mojo, 
+          Kabupaten Kediri. Terkenal dengan sebutan lain Area Wisata Besuki, 
+          Desa Jugo merupakan salah satu desa wisata yang menawarkan berbagai destinasi wisata yang memukau.  
+          Desa Jugo juga merupakan desa penghasil komoditas agro berupa kopi, susu, dan cengkeh.
+        </p>
+      </div>
       </section>
 
       <section
