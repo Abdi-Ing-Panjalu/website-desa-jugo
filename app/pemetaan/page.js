@@ -2,13 +2,7 @@ import React from 'react'
 import Navbar from '@/components/Navbar'
 import CardWisata from '@/components/CardWisata'
 import background from "@/assets/images/background-1.png"
-import petajugo from "@/assets/images/peta-jugo.png"
-import irenggolo from "@/assets/images/ironggolo-1.jpeg"
-import prongos from "@/assets/images/cafe-prongos-1.jpg"
-import warkop from "@/assets/images/warkop-billiard-1.jpg"
-import dholo from "@/assets/images/dholo-7.jpeg"
-import Image from "next/image"; 
-import ternak from "@/assets/images/ternak-2.png"
+import ternak from "@/assets/images/app/pemetaan/ternak-2.png"
 
 function wisata() {
   return (
