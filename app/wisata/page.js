@@ -87,29 +87,29 @@ function wisata() {
       </section>
 
       <motion.section 
-        className="w-full h-50 bg-white p-32 flex"
+        className="w-full h-50 bg-white p-32 flex items-center justify-between"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={fadeIn}
       >
-        <motion.div className="flex-1 flex justify-center" variants={fadeInUp}>
-          <motion.div variants={fadeInUp}> {/* Wrap the image in a motion.div for animation */}
-            <Image src={prongos2} alt="Petajugo" className="w-5/6 mr-6 items-center justify-center rounded-xl" />
+        <motion.div className="flex-1 flex justify-center items-center" variants={fadeInUp}>
+          <motion.div variants={fadeInUp} className="w-full flex justify-center"> 
+            <Image src={prongos2} alt="Cafe Prongos" className="w-5/6 ml-6 rounded-xl" />
           </motion.div>
         </motion.div>
         
-        <div className="flex-1 flex-col items-center justify-center">
-          <h1 className="text-black mt-12 text-5xl text-center font-bold">Cafe Prongos</h1>
-          <p className='my-12 text-center text-lg'>
+        <div className="flex-1 flex flex-col items-center justify-center text-center">
+          <h1 className="text-black mt-12 text-5xl font-bold">Cafe Prongos</h1>
+          <p className='my-12 text-lg'>
             Destinasi singgah favorit ketika mengunjungi kawasan wisata besuki. Menawarkan berbagai makanan dan minuman dengan suguhan pemandangan yang memukau.
           </p>
-          <a href="/wisata/prongos" className='text-lg text-center content-end'>Telusuri Lebih Lanjut &gt;&gt;&gt;</a>
+          <a href="/wisata/prongos" className='text-lg'>Telusuri Lebih Lanjut &gt;&gt;&gt;</a>
         </div>
 
-        <motion.div className="flex-1 flex justify-center" variants={fadeInUp}>
-          <motion.div variants={fadeInUp}> {/* Wrap the image in a motion.div for animation */}
-            <Image src={prongos3} alt="Petajugo" className="w-5/6 mr-6 items-center justify-center rounded-xl" />
+        <motion.div className="flex-1 flex justify-center items-center" variants={fadeInUp}>
+          <motion.div variants={fadeInUp} className="w-full flex justify-center"> 
+            <Image src={prongos3} alt="Cafe Prongos" className="w-5/6 mr-6 rounded-xl" />
           </motion.div>
         </motion.div>
       </motion.section>

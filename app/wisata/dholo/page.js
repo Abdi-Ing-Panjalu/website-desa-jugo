@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import CardGaleri from '@/components/CardGaleri'
@@ -9,9 +10,21 @@ import dholo4 from "@/assets/images/app/wisata/dholo/dholo-4.jpeg"
 import dholo5 from "@/assets/images/app/wisata/dholo/dholo-5.jpeg"
 import dholo6 from "@/assets/images/app/wisata/dholo/dholo-6.jpeg"
 import dholo7 from "@/assets/images/app/wisata/dholo/dholo-7.jpeg"
-import Image from "next/image"; 
+import Image from "next/image";
+import Line from "@/components/Line"
+import { motion } from 'framer-motion';
 
-function wisata() {
+const fadeIn = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }
+};
+
+const fadeInUp = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { opacity: 1, y: 0, transition: { duration: 1 } }
+};
+
+function dholo() {
   return (
 
     <div>
@@ -19,14 +32,19 @@ function wisata() {
         <Navbar />
       </nav>
       <section
-        className="relative w-full h-[calc(100vh-64px)] bg-cover bg-center flex flex-col items-start justify-center text-left"
-        style={{ backgroundImage: `url(${background.src})` }}
+        className="w-full h-[calc(100vh-64px)] bg-cover bg-center flex flex-col items-left justify-center text-left"
+        style={{ backgroundImage: `url(${background.src})` }} // Background image applied directly
       >
-        <div className="relative ml-24 animate-fadeIn">
-          <h1 className="text-white text-7xl font-bold mb-8">Air Terjun Dholo</h1>
-          <h3 className="text-white text-xl mb-2">Kecamatan Mojo, Kabupaten Kediri</h3>
-          <h3 className="text-white text-xl">Jawa Timur</h3>
-        </div>
+        <motion.div
+          className='ml-24'
+          initial="hidden"
+          animate="visible"
+          variants={fadeIn} // Animation applied only to the text
+        >
+          <motion.h1 className="text-white text-7xl font-bold mb-8" variants={fadeInUp}>Wisata Desa Jugo</motion.h1>
+          <motion.h3 className="text-white text-xl mb-2" variants={fadeInUp}>Kecamatan Mojo, Kabupaten Kediri</motion.h3>
+          <motion.h3 className="text-white text-xl" variants={fadeInUp}>Jawa Timur</motion.h3>
+        </motion.div>
       </section>
 
       <section className="w-full h-auto bg-white p-8 flex flex-col items-center">
@@ -43,9 +61,11 @@ function wisata() {
         </div>
       </section>
 
+      <Line/>
+
 
       <section className="w-full h-auto bg-white p-8 flex flex-col items-center">
-        <h1 className="text-5xl font-bold mt-8 mb-12">Lokasi</h1>
+        <h1 className="text-5xl font-bold mb-12">Lokasi</h1>
 
         <div className="container mx-auto p-4">
           <div className="flex flex-col md:flex-row bg-white shadow-lg min-h-fit rounded-lg overflow-hidden border border-gray-200">
@@ -78,4 +98,4 @@ function wisata() {
   )
 }
 
-export default wisata
+export default dholo

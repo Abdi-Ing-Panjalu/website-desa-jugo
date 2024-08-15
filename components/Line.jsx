@@ -2,14 +2,10 @@ import React from 'react';
 
 const Line = () => {
   return (
-    <div className="relative flex items-center justify-center w-full py-8">
-      {/* Line */}
-      <div className="w-full h-[2px] bg-gray-400"></div>
-
-      {/* Circle */}
-      <div className="absolute">
-        <div className="w-8 h-8 bg-blue-500 rounded-full animate-pulse"></div>
-      </div>
+    <div className="relative flex items-center my-16">
+      <div className="flex-grow border-t border-gray-300"></div>
+      <span className="flex-shrink mx-4 text-gray-500 font-semibold text-lg">✦</span> {/* You can replace this with any icon or text */}
+      <div className="flex-grow border-t border-gray-300"></div>
     </div>
   );
 };
