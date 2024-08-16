@@ -2,7 +2,7 @@
 import React from 'react'
 import Navbar from '@/components/Navbar'
 import CardWisata from '@/components/CardWisata'
-import background from "@/assets/images/background-1.png"
+import background from '@/assets/images/app/wisata/dholo/dholo-0.png';
 import prongos2 from "@/assets/images/app/wisata/prongos-2.png"
 import prongos3 from "@/assets/images/app/wisata/prongos-3.png"
 import warkop from "@/assets/images/app/wisata/warkop-billiard-1.jpg"
@@ -24,15 +24,18 @@ const fadeInUp = {
 };
 
 function wisata() {
+
   return (
     <div>
       <Navbar />
-      <section
-        className="w-full h-[calc(100vh-64px)] bg-cover bg-center flex flex-col items-left justify-center text-left"
-        style={{ backgroundImage: `url(${background.src})` }} // Background image applied directly
-      >
+      <section className="relative w-full h-[calc(100vh-64px)] bg-cover bg-center flex flex-col items-left justify-center text-left" style={{ backgroundImage: `url(${background.src})` }}>
+  
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+
+        {/* Content */}
         <motion.div
-          className='ml-24'
+          className='relative ml-24 z-20'
           initial="hidden"
           animate="visible"
           variants={fadeIn} // Animation applied only to the text
@@ -42,7 +45,6 @@ function wisata() {
           <motion.h3 className="text-white text-xl" variants={fadeInUp}>Jawa Timur</motion.h3>
         </motion.div>
       </section>
-
       <motion.section 
         className="w-full h-auto bg-white p-8 flex flex-col items-center"
         initial="hidden"
@@ -67,7 +69,7 @@ function wisata() {
           quality={100}
           className="z-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#7E471C]/85 via-[#7E471C]/55 via-24% via-[#7E471C]/40 via-39% to-[#7E471C]/20 z-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20 z-20"></div>
 
         <motion.div 
           className="absolute inset-0 flex flex-col items-start justify-center ml-24 z-30"
@@ -125,7 +127,7 @@ function wisata() {
           quality={100}
           className="z-10"
         />
-        <div className="absolute inset-0 bg-gradient-to-l from-[#7E471C]/85 via-[#7E471C]/55 via-24% via-[#7E471C]/40 via-39% to-[#7E471C]/20 z-20"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/55 to-black/20 z-20"></div>
 
         <motion.div 
           className="absolute inset-0 flex flex-col items-end justify-center mr-24 z-30"
